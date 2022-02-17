@@ -1,6 +1,7 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import { User } from './User.js';
+import { Chistes } from './Chistes.js';
 
 const ApiUrl = 'https://randomuser.me/api/?results=3';
 const Fetch = fetch(ApiUrl);
@@ -19,7 +20,14 @@ function App() {
 
   return (
     <div>
-      <User data={data} />
+      <div className='teroria'>
+        <User data={data} />
+      </div>
+      <hr />
+      <div className='tarea'>
+        <Chistes />
+      </div>
+
     </div>
   )
 };
