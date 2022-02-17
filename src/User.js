@@ -5,7 +5,7 @@ export const User = ({ data }) => {
                 return (
                     <li key={obj.email}>
                         <p>{obj.name.first}</p>
-                        <div><img src={obj.picture.large} alt='img' /></div>
+                        <div><img src={obj.picture.large} alt={'img'+obj.name.first} /></div>
                     </li>
                 )
             })}
