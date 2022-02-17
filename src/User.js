@@ -4,8 +4,8 @@ export const User = ({ data }) => {
             {data.map((obj) => {
                 return (
                     <li key={obj.email}>
-                        <p>{data.name.first}</p>
-                        <div><img src={data.picture.large} alt='img' /></div>
+                        <p>{obj.name.first}</p>
+                        <div><img src={obj.picture.large} alt='img' /></div>
                     </li>
                 )
             })}
